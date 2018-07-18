@@ -1,32 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button } from "react-bootstrap";
+import Button3 from "./buttons/button3.js";
 
 //import "./styles.css";
-import "./bootstrap.min.css";
-
-class Button3 extends React.Component {
-  state = { counter: 1 };
-
-  handleClick = () => {
-    this.setState(prevState => ({
-      counter: prevState.counter + 1
-    }));
-    console.log("button clicked");
-  };
-
-  onClick = () => {
-    this.props.onButtonClick(true);
-  };
-
-  render() {
-    return (
-      <Button onClick={this.handleClick} bsStyle="primary">
-        {this.state.counter}
-      </Button>
-    );
-  }
-}
+//import "./bootstrap.min.css";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Button3 label="Save" />, rootElement);
