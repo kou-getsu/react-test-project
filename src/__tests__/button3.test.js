@@ -1,5 +1,6 @@
 import { configure, shallow } from "enzyme";
 import * as Adapter from "enzyme-adapter-react-16";
+import { Button3 } from "../buttons/button3.js";
 import React from "react";
 
 configure({ adapter: new Adapter() });
